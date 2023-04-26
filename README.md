@@ -37,11 +37,11 @@
 <!-- PROJECT DESCRIPTION -->
 
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Portfolio project <a name="about-project"></a>
 
 
 
-**'Hello Microverse project'** is the first mini project I've done in microverse
+**'Portfolio project'** is the first coding project I've done in microverse
 
 
 ## 🛠 Built With <a name="built-with"></a>
