@@ -109,6 +109,7 @@ section {
   .social-media {
     width: 50%;
   }
+
   .social-media ul {
     display: flex;
     justify-content: space-around;
