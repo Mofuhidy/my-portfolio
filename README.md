@@ -8,7 +8,7 @@
 
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Portfolio Project [mobile first]</b></h3>
 
 </div>
 
@@ -66,7 +66,7 @@
 ### Key Features <a name="key-features"></a>
 
 
-- nav bar for mobile view
+- responsive design built with pure HTML5 and CSS3
 - section has an introduction about me and some description
 
 
@@ -81,81 +81,56 @@
 
 
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps:
+- Open your Terminal
+- Navigate to the desired directory[folder] to which you want to clone the repository to
+- [Copy & Paste] git clone https://github.com/Mofuhidy/my-portfolio/
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Basic knowledge of HTML and CSS
+- Basic knderstanding of Linters
+- Basic understanding of Github
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+- git clone  https://github.com/Mofuhidy/my-portfolio/
 
 ### Install
 
-Install this project with:
+-Don't need to be installed
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+- npx stylelint "**/*.{css,scss}"
+- npx hint .
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
+- Github tools
 
-```sh
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```
- -->
+ 
+### Usage
+
+To run the project, execute the following command by clonning to your machine:
+
+  git clone https://Mofuhidy/my-portfolio
+
+
+### Run tests
+
+- No tests yet.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
