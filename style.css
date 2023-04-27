@@ -62,7 +62,7 @@ section {
   }
 
   /* second section */
-  section {
+  #landpageSection {
     height: calc(100vh - 48px);
     flex-direction: column;
     align-items: flex-start;
@@ -144,4 +144,11 @@ section {
   .navInfo li {
     color: #fff;
   }
+}
+
+/* works section */
+
+.worksSection {
+  background-color: #fff;
+  min-height: 100vh;
 }
