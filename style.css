@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins:wght@300;400&family=Roboto&display=swap");
+
+:root {
+  --main-bg-color: #1c1a19;
+  --second-color: #3c3a39;
+  --highlight: #ff6b00;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-size: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* the fonts for the project */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* first section */
+.navBar {
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* second section */
+section {
+  background-color: var(--main-bg-color);
+  display: flex;
+}
+
+.social-media {
+  display: flex;
+}
+
+@media only screen and (min-width: 375px) {
+  /* first section */
+  .navBar {
+    height: 48px;
+    padding: 0 24px;
+  }
+
+  .navBar img {
+    height: 14px;
+  }
+
+  .navInfo {
+    display: none;
+  }
+
+  /* second section */
+  section {
+    height: calc(100vh - 48px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px;
+    background-image: url(imgs/Illustration.svg);
+    background-repeat: no-repeat;
+    background-position-y: 115%;
+    background-position-x: right;
+  }
+
+  .mainParagraph {
+    padding-top: 120px;
+  }
+
+  .mainParagraph .welcomeText {
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    margin: 0;
+    color: var(--highlight);
+  }
+
+  .mainParagraph .supportingText {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff5e1;
+    margin-block: 12px;
+  }
+
+  .mainParagraph .description {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .social-media {
+    width: 50%;
+  }
+
+  .social-media ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navBar {
+    justify-content: space-around;
+    height: 72px;
+  }
+
+  .navBar img {
+    height: 16px;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .navInfo {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    width: 30%;
+  }
+
+  .navInfo li {
+    color: #fff;
+  }
+}
