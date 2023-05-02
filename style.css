@@ -74,12 +74,9 @@ body {
   color: #091e42;
 }
 
-.mainListCategoris {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0;
-  gap: 12px;
+.mainListCategoris .mainTags {
+  float: left;
+  margin-right: 15px;
 }
 
 .mainTags {
