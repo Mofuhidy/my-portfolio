@@ -451,15 +451,8 @@ body {
     margin-top: 3rem;
     display: flex;
     padding: 0 24px;
-  }
-
-  .contactForm ul {
-    display: flex;
     flex-direction: column;
-  }
-
-  .contactForm ul li {
-    margin-bottom: 20px;
+    row-gap: 45px;
   }
 
   .contactForm input {
