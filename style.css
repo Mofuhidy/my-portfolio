@@ -450,7 +450,7 @@ body {
   .contactForm {
     margin-top: 3rem;
     display: flex;
-    padding: 0 24px;
+    padding: 0 15px;
     flex-direction: column;
     row-gap: 45px;
   }
