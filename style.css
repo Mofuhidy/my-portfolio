@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins:wght@300;400&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;700&family=Poppins:wght@300;400&family=Roboto&display=swap");
 
 :root {
   --main-bg-color: #1c1a19;
@@ -37,13 +37,100 @@ body {
 }
 
 /* second section */
-section {
+#landpageSection,
+#aboutMe {
   background-color: var(--main-bg-color);
   display: flex;
 }
 
 .social-media {
   display: flex;
+}
+
+/* works section */
+
+.worksSection {
+  background-color: #fff;
+  min-height: 100vh;
+  display: grid;
+}
+
+.primaryCardText {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.seconndryCardText {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.mainListCategoris {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 12px;
+}
+
+.mainTags {
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.btn {
+  align-items: center;
+  gap: 10px;
+  background: var(--highlight);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffff;
+  border-width: none;
+  border-style: none;
+  border-color: none;
+}
+
+.btn:hover {
+  color: var(--highlight);
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  cursor: pointer;
+}
+
+.btn:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.cardBtn {
+  height: 42px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 }
 
 @media only screen and (min-width: 375px) {
@@ -73,7 +160,7 @@ section {
   }
 
   /* second section */
-  section {
+  #landpageSection {
     height: calc(100vh - 48px);
     flex-direction: column;
     align-items: flex-start;
@@ -125,6 +212,218 @@ section {
     display: flex;
     justify-content: space-around;
     width: 100%;
+  }
+
+  /* Works sections */
+  .worksSection {
+    margin: 120px 24px;
+  }
+
+  .worksTitle {
+    font-family: "Crete Round", sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    margin: 0;
+    padding: 0;
+    color: var(--main-bg-color);
+    border-bottom: 1px solid #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* main card section */
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skillsContent img {
+    margin-right: 12px;
+  }
+
+  #mainWork img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #mainWork {
+    margin-top: 80px;
+  }
+
+  .primaryCardText {
+    margin-block: 24px 12px;
+  }
+
+  .seconndryCardText {
+    margin: 0;
+  }
+
+  .mainListCategoris {
+    margin-top: 12px;
+  }
+
+  .actionBtn {
+    margin-top: 12px;
+  }
+
+  .mainBtn {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    background: var(--highlight);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+  }
+
+  /* works card wrapper */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+  }
+
+  .worksCard {
+    height: 320px;
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(imgs/works/work2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 72px 19px 9px 13px;
+    margin-top: 24px;
+    position: relative;
+  }
+
+  .CardText {
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  .paragraphCardText {
+    width: 300px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  .tags {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.24);
+    color: #fff;
+    font-size: 14px;
+  }
+
+  /* about me section */
+  #aboutMe {
+    flex-direction: column;
+    min-height: 150vh;
+    padding: 0 24px;
+    background-image: url(imgs/illustration-about-me-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: 400px;
+    background-position-x: right;
+  }
+
+  .aboutMeText {
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    margin: 0;
+    color: var(--highlight);
+  }
+
+  .aboutMeDescription {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .getResumeBtn {
+    padding: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  #aboutMe .mainParagraph {
+    border-bottom: 1px solid #fff;
+    height: 90vh;
+  }
+
+  .skillsContainer {
+    margin-top: 124px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skillsContent {
+    padding: 20px;
+  }
+
+  .skillsContent span {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .innerSkills {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 20px 0;
+  }
+
+  .innerSkills li {
+    padding: 5px;
   }
 }
 
