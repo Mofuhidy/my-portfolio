@@ -278,28 +278,35 @@
     </section>
 
     <footer>
-        <h2 class="contactFormText">
-            I'm always <br>
-            interested in hearing about new projects, so if you'd like to chat please get in touch.
-        </h2>
-
-        <form action="" method="post">
-            <ul>
-                <li>
-                    <input type="text" id="full-name" placeholder="Full name" maxlength="30" required>
-                </li>
-                <li>
-                    <input type="email" id="email" placeholder="Email address" required>
-                </li>
-                <li>
-                    <textarea name="message" id="text-area-msg" maxlength="500" placeholder="Write me something..."
-                        col="30" rows="10" required></textarea>
-                </li>
-                <li class="buttonContainer">
-                    <button type="submit" class="btn getResumeBtn" id="getInTouch">Get in touch</button>
-                </li>
-            </ul>
-        </form>
+        <section>
+            <h2 class="contactFormText">
+                I'm always <br>
+                interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
+            <form action="https://formspree.io/f/mvonlarn" method="post">
+                <ul>
+                    <li>
+                        <label for="full-name">
+                            <input type="text" id="full-name" placeholder="Full name" maxlength="30" required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="email">
+                            <input type="email" id="email" placeholder="Email address" required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="text-area-msg">
+                            <textarea name="message" id="text-area-msg" maxlength="500"
+                                placeholder="Write me something..." col="30" rows="10" required></textarea>
+                        </label>
+                    </li>
+                    <li class="buttonContainer">
+                        <button type="submit" class="btn getResumeBtn" id="getInTouch">Get in touch</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
         <div class="social-media-footer social-media">
             <ul>
                 <li> <a href="#"> <img src="imgs/social-media/github.svg" alt="github logo"></a></li>
