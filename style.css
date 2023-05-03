@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;700&family=Poppins:wght@300;400&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;700&family=Poppins:wght@100;300;400&family=Roboto&display=swap');
 
 :root {
   --main-bg-color: #1c1a19;
@@ -450,7 +450,7 @@ body {
   .contactForm {
     margin-top: 3rem;
     display: flex;
-    padding: 0 15px;
+    padding: 0 10px;
     flex-direction: column;
     row-gap: 45px;
   }
@@ -513,10 +513,17 @@ body {
   }
 }
 
+/* Descktop version */
+
 @media only screen and (min-width: 768px) {
   .navBar {
     justify-content: space-around;
     height: 72px;
+    padding: 0;
+  }
+
+  nav {
+    padding: 0 5%;
   }
 
   .navBar img {
@@ -529,15 +536,80 @@ body {
 
   .navInfo {
     display: flex;
-    justify-content: space-between;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    width: 30%;
+    column-gap: 40px;
   }
 
   .navInfo li {
     color: #fff;
+  }
+
+  nav .flex-container {
+    align-items: center;
+  }
+
+  #landpageSection {
+    height: calc(100vh - 72px);
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+    background-image: url(imgs/Illustration-header.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .social-media {
+    height: 190px;
+    order: -1;
+    width: 8%;
+  }
+
+  .social-media ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .mainParagraph {
+    width: 40%;
+    padding-top: 2.5%;
+  }
+
+  .mainParagraph .welcomeText {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .mainParagraph .supportingText {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .mainParagraph .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .worksTitle {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: none;
+    align-items: center;
+  }
+
+
+  .worksTitle:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid;
+    margin-left: 28px
+  }
+
+  .worksSection {
+    padding: 0 150px;
   }
 }
