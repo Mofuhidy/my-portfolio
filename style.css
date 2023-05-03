@@ -82,6 +82,10 @@ body {
   gap: 12px;
 }
 
+.actionBtn {
+  margin-top: 20px;
+}
+
 .mainTags {
   border: 1px solid #8993a4;
   box-sizing: border-box;
@@ -149,6 +153,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   .navBar img {
@@ -226,7 +231,7 @@ body {
     font-weight: 400;
     line-height: 52px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 35px;
     color: var(--main-bg-color);
     border-bottom: 1px solid #212121;
     display: flex;
@@ -306,6 +311,7 @@ body {
     padding: 72px 19px 9px 13px;
     margin-top: 24px;
     position: relative;
+    transition: all 1s ease;
   }
 
   .CardText {
@@ -516,10 +522,16 @@ body {
 /* Descktop version */
 
 @media only screen and (min-width: 768px) {
+  /* header section */
   .navBar {
     justify-content: space-around;
     height: 72px;
     padding: 0;
+  }
+
+  .logo,
+  .navInfo {
+    transition: all 1s ease;
   }
 
   nav {
@@ -556,9 +568,10 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0 24px;
-    background-image: url(imgs/Illustration-header.svg);
+    background-image: url(imgs/Illustration-header.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 40%;
+    background-position: center right;
   }
 
   .social-media {
@@ -573,11 +586,12 @@ body {
   }
 
   .mainParagraph {
-    width: 40%;
+    width: 50%;
     padding-top: 2.5%;
   }
 
   .mainParagraph .welcomeText {
+    color: #f55800;
     font-size: 72px;
     line-height: 82px;
   }
@@ -593,6 +607,8 @@ body {
     line-height: 32px;
   }
 
+  /* Works section */
+
   .worksTitle {
     display: flex;
     justify-content: flex-start;
@@ -601,15 +617,188 @@ body {
     align-items: center;
   }
 
-
-  .worksTitle:after {
+  .worksTitle::after {
     content: "";
     flex: 1;
-    border-bottom: 1px solid;
-    margin-left: 28px
+    border-bottom: 1px solid black;
+    margin-left: 28px;
   }
 
   .worksSection {
     padding: 0 150px;
+  }
+
+  #mainWork {
+    min-height: 500px;
+  }
+
+  #mainWork > .card {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .primaryCardText {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .cardImg {
+    flex: 60%;
+  }
+
+  .cardContainer {
+    flex: 40%;
+  }
+
+  .mainListCategoris {
+    margin-block: 20px 10px;
+  }
+
+  .seconndryCardText {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* works section */
+
+  .worksCard {
+    cursor: pointer;
+    transition: all 1s ease;
+    display: flex;
+    align-items: end;
+  }
+
+  .worksCard button {
+    display: none;
+    transition: all 1s ease;
+  }
+
+  .worksCard .cardContent {
+    margin-top: 65px;
+  }
+
+  .paragraphCardText {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .worksCard:hover button {
+    display: block;
+  }
+
+  .worksCard:hover {
+    background: url(imgs/works/work2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .worksCard:hover .card-container {
+    display: none;
+  }
+
+  /* about me section */
+  #aboutMe {
+    padding: 0;
+    background-image: none;
+    min-height: 145vh;
+  }
+
+  #aboutMe .aboutMeDiv {
+    background-image: url(imgs/illustration-about.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+    padding: 150px;
+  }
+
+  #aboutMe .mainParagraph {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+    row-gap: 10px;
+    height: 65vh;
+  }
+
+  #aboutMe .mainParagraph button {
+    align-self: flex-start;
+    padding: 12px;
+    gap: 10px;
+    width: 156px;
+    height: 48px;
+  }
+
+  #aboutMe .aboutMeText {
+    color: #f55800;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  #aboutMe .aboutMeDescription {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .skillsContainer {
+    margin: 0 150px;
+    border-top: 1px solid white;
+    margin-top: 40px;
+  }
+
+  .skillsContainer .skillsList {
+    margin-top: 120px;
+    justify-content: space-between;
+  }
+
+  .skillsList .skillsContent {
+    text-align: start;
+  }
+
+  .skillsList .innerSkills {
+    align-items: baseline;
+  }
+
+  /* Contact Form */
+  .formContainer {
+    flex-direction: row;
+    padding: 150px;
+  }
+
+  .formContainer .contactFormText {
+    flex: 20%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: start;
+  }
+
+  .formContainer form {
+    flex: 2;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+  }
+
+  .buttonContainer {
+    align-self: baseline;
+  }
+
+  .social-media-footer {
+    flex-direction: row;
+    width: 100%;
+    height: 75px;
+  }
+
+  .social-media-footer ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    background-color: #f55800;
   }
 }
