@@ -141,7 +141,7 @@ body {
 @keyframes backgroundColor {
   from {
     background-position: 0%;
-    -webkit-text-stroke: unset
+    -webkit-text-stroke: unset;
   }
 
   to {
@@ -325,9 +325,12 @@ body {
 
   .worksCard {
     height: 320px;
-    background: linear-gradient(180.45deg,
+    background:
+      linear-gradient(
+        180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%),
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
       url(imgs/works/work2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -553,7 +556,6 @@ body {
 /* Descktop version */
 
 @media only screen and (min-width: 768px) {
-
   /* header section */
   .navBar {
     justify-content: space-around;
@@ -572,8 +574,7 @@ body {
     position: relative;
   }
 
-
-  .navInfo a:after {
+  .navInfo a::after {
     content: "";
     position: absolute;
     right: 0;
@@ -583,13 +584,12 @@ body {
     height: 2px;
     width: 0;
     transition-property: all;
-    transition-duration: .5s;
-    transition-duration: .3s;
+    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   }
 
-
-  .navInfo a:hover:after {
+  .navInfo a:hover::after {
     right: auto;
     left: 0;
     width: 100%;
@@ -602,7 +602,7 @@ body {
 
   .navInfo a:hover {
     letter-spacing: 1px;
-    transition: all .5 cubic-bezier(0.4, 0, 1, 1) .3s;
+    transition: all 0.5 cubic-bezier(0.4, 0, 1, 1) 0.3s;
   }
 
   nav {
@@ -670,6 +670,7 @@ body {
     color: black;
     font-size: 72px;
     line-height: 82px;
+
     /* making stroke for texts */
     -webkit-text-stroke: 1px var(--second-color);
     background: linear-gradient(to right, #f55800, rgba(241, 89, 3, 0.84) 50%, transparent 10%);
@@ -680,7 +681,6 @@ body {
     background-position: 100%;
     animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse forwards 1s;
   }
-
 
   .mainParagraph .supportingText {
     font-weight: 500;
