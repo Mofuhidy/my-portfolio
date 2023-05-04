@@ -570,7 +570,7 @@ body {
     padding: 0 24px;
     background-image: url(imgs/Illustration-header.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 35%;
     background-position: center right;
   }
 
@@ -603,8 +603,9 @@ body {
   }
 
   .mainParagraph .description {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
+    width: 95%;
   }
 
   /* Works section */
@@ -625,7 +626,7 @@ body {
   }
 
   .worksSection {
-    padding: 0 150px;
+    padding: 0 120px;
   }
 
   #mainWork {
@@ -708,13 +709,14 @@ body {
     background-image: url(imgs/illustration-about.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 50%;
-    padding: 150px;
+    background-size: 40%;
+    padding: 120px;
   }
 
   #aboutMe .mainParagraph {
     display: flex;
-    width: 50%;
+    width: 45%;
+    text-align: start;
     flex-direction: column;
     justify-content: center;
     border-bottom: none;
@@ -737,12 +739,12 @@ body {
   }
 
   #aboutMe .aboutMeDescription {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
   }
 
   .skillsContainer {
-    margin: 0 150px;
+    margin: 0 120px;
     border-top: 1px solid white;
     margin-top: 40px;
   }
@@ -763,7 +765,7 @@ body {
   /* Contact Form */
   .formContainer {
     flex-direction: row;
-    padding: 150px;
+    padding: 120px;
   }
 
   .formContainer .contactFormText {
