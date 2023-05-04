@@ -811,5 +811,6 @@ body {
 
   .btn {
     background-color: #f55800;
+    transition: ease-in-out 0.3s 0.2s all;
   }
 }
