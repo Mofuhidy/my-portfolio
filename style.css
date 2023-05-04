@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;700&family=Poppins:wght@100;300;400&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;700&family=Poppins:wght@100;300;400&family=Roboto&display=swap");
 
 :root {
   --main-bg-color: #1c1a19;
@@ -305,7 +305,12 @@ body {
 
   .worksCard {
     height: 320px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(imgs/works/work2.png);
+    background: linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url(imgs/works/work2.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 72px 19px 9px 13px;
@@ -443,7 +448,7 @@ body {
   }
 
   .formContainer h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -477,7 +482,7 @@ body {
 
   .contactForm input::placeholder {
     padding-left: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -486,7 +491,7 @@ body {
 
   .contactForm textarea::placeholder {
     padding-left: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
@@ -578,6 +583,10 @@ body {
     height: 190px;
     order: -1;
     width: 8%;
+  }
+
+  .social-media img:hover {
+    transform: scale(1.2);
   }
 
   .social-media ul {
