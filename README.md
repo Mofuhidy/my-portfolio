@@ -123,10 +123,8 @@ You can deploy this project using:
  
 ### Usage
 
-To run the project, execute the following command by clonning to your machine:
-
-  git clone https://Mofuhidy/my-portfolio
-
+To run the project, just visit this link: 
+https://mofuhidy.github.io/
 
 ### Run tests
 
