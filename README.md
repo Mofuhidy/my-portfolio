@@ -1,4 +1,3 @@
-
 # <a name="readme-top"></a>
 
 <div align="center">
@@ -18,6 +17,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Live Demo](#live-demo)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
@@ -36,18 +36,17 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-
 # 📖 Portfolio project <a name="about-project"></a>
-
-
 
 **'Portfolio project'** is the first coding project I've done in microverse
 
+## Live Demo <a name="live-demo"></a>
+
+[Fuhidy's Portfolio](https://mofuhidy.github.io/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
 
 <details>
   <summary>Client</summary>
@@ -59,29 +58,21 @@
   </ul>
 </details>
 
-
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-
 - responsive design built with pure HTML5 and CSS3
 - section has an introduction about me and some description
 
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
-
 To get a local copy up and running, follow these steps:
+
 - Open your Terminal
 - Navigate to the desired directory[folder] to which you want to clone the repository to
 - [Copy & Paste] git clone https://github.com/Mofuhidy/my-portfolio/
@@ -98,18 +89,17 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone  https://github.com/Mofuhidy/my-portfolio/
+- git clone https://github.com/Mofuhidy/my-portfolio/
 
 ### Install
 
 -Don't need to be installed
 
-
 ### Run tests
 
 To run tests, run the following command:
 
-- npx stylelint "**/*.{css,scss}"
+- npx stylelint "\*_/_.{css,scss}"
 - npx hint .
 
 ### Deployment
@@ -120,10 +110,9 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
- 
 ### Usage
 
-To run the project, just visit this link: 
+To run the project, just visit this link:
 https://mofuhidy.github.io/
 
 ### Run tests
@@ -136,11 +125,9 @@ https://mofuhidy.github.io/
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Mohammed AlFuhidy (Fuhidy)**
 
 - GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,11 +135,9 @@ https://mofuhidy.github.io/
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
 - [ ] **Make it mobile friendly and responsive on all devices**
 - [ ] **Add more sections**
 - [ ] **Add details and modals**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,8 +155,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -180,17 +163,11 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-
-
 I would like to thank Microverse
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-
-
 
 <!-- LICENSE -->
 
