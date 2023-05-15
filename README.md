@@ -55,6 +55,9 @@
   </ul>
   <ul>
       <li><a href="#">CSS</a></li>
+  </ul> 
+  <ul>
+      <li><a href="#">JS</a></li>
   </ul>
 </details>
 
@@ -64,6 +67,7 @@
 
 - responsive design built with pure HTML5 and CSS3
 - section has an introduction about me and some description
+- menu for mobile view
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,6 +105,7 @@ To run tests, run the following command:
 
 - npx stylelint "\*_/_.{css,scss}"
 - npx hint .
+- npx eslint .
 
 ### Deployment
 
