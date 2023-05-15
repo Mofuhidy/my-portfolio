@@ -134,6 +134,10 @@ https://mofuhidy.github.io/
 
 - GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
 
+👤 **Marie Grâce Bahati**
+
+- GitHub: [@mariegrace31](https://github.com/mariegrace31)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
