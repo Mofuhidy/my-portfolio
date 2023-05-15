@@ -6,6 +6,10 @@
   --highlight: #ff6b00;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -326,9 +330,11 @@ body {
   .worksCard {
     height: 320px;
     background:
-      linear-gradient(180.45deg,
+      linear-gradient(
+        180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%),
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
       url(imgs/works/work2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -488,20 +494,20 @@ body {
   .contactForm {
     margin-top: 3rem;
     display: flex;
-    padding: 0 10px;
+    padding: 0;
     flex-direction: column;
     row-gap: 45px;
   }
 
   .contactForm input {
-    width: 350px;
+    width: 345px;
     padding: 15px;
     border: none;
     border-bottom: 1px solid #dbd8d7;
   }
 
   .contactForm textarea {
-    width: 350px;
+    width: 345px;
     padding: 15px;
     border: none;
     background-color: #fbf8f7;
@@ -553,25 +559,39 @@ body {
   /* design the mobile menu */
   .navInfoMobile,
   .cancelIcon {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: start;
     gap: 20px;
   }
 
+  .dNone {
+    display: none;
+  }
+
   .navInfoMobile {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 99;
     background-color: #3c3a39;
     padding-top: 30px;
     position: relative;
+    transition: all 0.5s;
+  }
+
+  body.active {
+    overflow-y: hidden;
   }
 
   .cancelIcon {
     position: absolute;
     top: 10px;
     right: 23px;
+  }
+
+  .cancelIcon.active,
+  .navInfoMobile.active {
+    display: flex;
   }
 
   .navInfoMobile li a {
@@ -581,16 +601,20 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    padding-left: 30px;
+    text-decoration: none;
   }
 
-
+  .mobileLinks {
+    width: 75%;
+    border-bottom: 1px solid #6f6c6b;
+    padding: 0 22px;
+    margin-left: 24px;
+  }
 }
 
 /* Descktop version */
 
 @media only screen and (min-width: 768px) {
-
   /* header section */
   .navBar {
     justify-content: space-around;
