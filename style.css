@@ -326,11 +326,9 @@ body {
   .worksCard {
     height: 320px;
     background:
-      linear-gradient(
-        180.45deg,
+      linear-gradient(180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%
-      ),
+        rgba(38, 38, 38, 0.9) 61.94%),
       url(imgs/works/work2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -551,11 +549,48 @@ body {
     column-gap: 20px;
     align-items: center;
   }
+
+  /* design the mobile menu */
+  .navInfoMobile,
+  .cancelIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .navInfoMobile {
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background-color: #3c3a39;
+    padding-top: 30px;
+    position: relative;
+  }
+
+  .cancelIcon {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+  }
+
+  .navInfoMobile li a {
+    color: #fff5e1;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 30px;
+  }
+
+
 }
 
 /* Descktop version */
 
 @media only screen and (min-width: 768px) {
+
   /* header section */
   .navBar {
     justify-content: space-around;
@@ -899,5 +934,10 @@ body {
   .btn {
     background-color: #f55800;
     transition: ease-in-out 0.3s 0.2s all;
+  }
+
+  .navInfoMobile,
+  .cancelIcon {
+    display: none;
   }
 }
