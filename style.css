@@ -275,6 +275,16 @@ body {
     margin-right: 12px;
   }
 
+  .imgContainer img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .modalContent .footer button > img {
+    width: 15px;
+  }
+
   #mainWork img {
     width: 100%;
     object-fit: cover;
@@ -610,13 +620,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: 5% 5%;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 1.3rem;
     position: fixed;
     top: 0%;
     left: 0%;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 2;
   }
 
   .modalHeader {
@@ -651,12 +662,6 @@ body {
     margin-top: 25px;
   }
 
-  .imgContainer img {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-  }
-
   .modalContent .middle p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -684,7 +689,6 @@ body {
     padding: 0 14px;
   }
 
-
   .overlay {
     position: fixed;
     top: 0;
@@ -698,10 +702,6 @@ body {
     z-index: 1;
   }
 
-  .modal {
-    z-index: 2;
-  }
-
   .hidden {
     display: none;
   }
@@ -709,16 +709,11 @@ body {
   .modalContent .footer a {
     text-decoration: none;
   }
-
-  .modalContent .footer button > img {
-    width: 15px !important;
-  }
 }
 
 /* Descktop version */
 
 @media only screen and (min-width: 768px) {
-
   /* header section */
   .navBar {
     justify-content: space-around;
@@ -812,6 +807,12 @@ body {
     height: 190px;
     order: -1;
     width: 8%;
+  }
+
+  .imgContainer img {
+    max-height: 375px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .social-media img:hover {
@@ -933,6 +934,14 @@ body {
     line-height: 24px;
   }
 
+  .modalHeader button {
+    all: unset;
+    cursor: pointer;
+    color: #67798e;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .worksCard:hover button {
     display: block;
   }
@@ -973,6 +982,19 @@ body {
     border-bottom: none;
     row-gap: 10px;
     height: 65vh;
+  }
+
+  .modalContent .footer button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0 14px;
   }
 
   #aboutMe .mainParagraph button {
@@ -1070,12 +1092,15 @@ body {
   }
 
   /* Modal */
+
+
+
+  /* Hide scrollbar for IE, Edge and Firefox */
   .modal {
     display: flex;
     flex-direction: column;
-    padding: 30px;
     margin: 5% 5%;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 1.3rem;
     max-height: 570px;
     position: fixed;
@@ -1083,12 +1108,24 @@ body {
     left: 0%;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 2;
+    -ms-overflow-style: none;
+
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .modal::-webkit-scrollbar {
+    display: none;
   }
 
   .modalHeader {
     display: flex;
     flex-direction: column;
-    margin: -5px 5px 0px 5px;
+    margin: -5px 5px 0 5px;
   }
 
   .modalHeader .mainListCategoris {
@@ -1110,24 +1147,10 @@ body {
     color: #172b4d;
   }
 
-  .modalHeader button {
-    all: unset;
-    cursor: pointer;
-    color: #67798e;
-    font-size: 17px;
-    line-height: 24px;
-  }
-
   .modalContent {
     margin-top: 25px;
     display: flex;
     gap: 25px;
-  }
-
-  .imgContainer img {
-    max-height: 375px;
-    width: 100%;
-    object-fit: cover;
   }
 
   .imgContainer {
@@ -1156,19 +1179,6 @@ body {
     bottom: 10px;
   }
 
-  .modalContent .footer button {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding: 0 14px;
-  }
-
   .modalContent .footer a {
     text-decoration: none;
   }
@@ -1190,26 +1200,7 @@ body {
     z-index: 1;
   }
 
-  .modal {
-    z-index: 2;
-  }
-
   .hidden {
     display: none;
-  }
-
-
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .modal::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .modal {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
   }
 }
