@@ -282,7 +282,7 @@ body {
   }
 
   .modalContent .footer button > img {
-    width: 15px;
+    width: 15px !important;
   }
 
   #mainWork img {
@@ -620,6 +620,7 @@ body {
     flex-direction: column;
     margin: 5% 5%;
     background-color: #fff;
+    max-height: 85vh;
     padding: 1.3rem;
     position: fixed;
     top: 0%;
