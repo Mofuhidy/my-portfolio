@@ -707,7 +707,15 @@ body {
   }
 
   .hidden {
-    /* display: none; */
+    display: none;
+  }
+
+  .modalContent .footer a {
+    text-decoration: none;
+  }
+
+  .modalContent .footer button > img {
+    width: 15px !important;
   }
 }
 
@@ -1164,6 +1172,13 @@ body {
     padding: 0 14px;
   }
 
+  .modalContent .footer a {
+    text-decoration: none;
+  }
+
+  .modalContent .footer button > img {
+    width: 15px !important;
+  }
 
   .overlay {
     position: fixed;
@@ -1184,5 +1199,9 @@ body {
 
   .hidden {
     display: none;
+  }
+
+  .worksSection {
+    position: relative;
   }
 }
