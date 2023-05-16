@@ -614,7 +614,6 @@ body {
     margin-left: 24px;
   }
 
-
   /* Modal */
   .modal {
     display: flex;
@@ -1092,10 +1091,6 @@ body {
   }
 
   /* Modal */
-
-
-
-  /* Hide scrollbar for IE, Edge and Firefox */
   .modal {
     display: flex;
     flex-direction: column;
