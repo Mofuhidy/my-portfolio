@@ -110,3 +110,102 @@ mainWorkCard();
 forMainModal();
 
 // end fo the main work section
+
+// works section
+const works = [{
+  title: 'Multi-Post Stories',
+  image: './imgs/works/myWork.png',
+  live: '#',
+  repository: 'https://github.com/Mofuhidy',
+  technology: ['Bootstrap', 'Ruby', 'HTML', 'CSS'],
+  description: `A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text
+         ever since the 1500s, when an unknown printer took a standard dummy text.`,
+}, ];
+const worksSection = document.querySelector('#worksSection');
+function worksCard() {
+  works.forEach((work) => {
+      const card = document.createElement('div');
+      card.classList.add('works');
+      card.innerHTML = `
+          <article class="worksCard"> 
+            <div class="card-container">
+              <div class="cardContent">
+                <h2 class="CardText">${work.title}</h2>
+                <p class="paragraphCardText">
+                 ${work.description}
+                </p>
+              </div>
+              <ul class="mainListCategoris">
+                ${mainWork.technology.map((item) => `<li class="mainTags">${item}</li>`).join('')}
+              </ul>
+            </div>
+            <button type="button" class="btn cardBtn showPro">See project</button>
+          </article>
+  `;
+      worksSection.appendChild(card);
+  });
+}
+// this function to add the details of the proejets inside the modal
+function windowPopUp() {
+  // define empty array to add the details to it
+  const worksArr = [];
+  const popWindow = document.createElement('section');
+  works.forEach((work) => {
+      popWindow.classList.add('modal', 'hidden'); // add the default classes
+      popWindow.innerHTML = `
+      <div class="modalHeader">
+        <div class="title">
+          <h3 class="modalTitle">${work.title}</h3>
+          <button class="closeBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mainListCategoris">
+          ${mainWork.technology.map((item) => `<li class="mainTags">${item}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="modalContent">
+        <div class="imgContainer">
+          <img src="${mainWork.image}" alt="works image">
+        </div>
+        <div class="middle">
+          <p>
+           ${mainWork.description}
+          </p>
+          <div class="footer">
+           <a href="${mainWork.live}"><button class="btn">See live <img src="./imgs/Icon-see-live.png" alt="see live icon"></button></a>
+           <a href="${mainWork.repository}"><button class="btn">See source <img src="./imgs/giticon.png" alt="github icon"></button></a>
+          </div>
+        </div>
+      </div>
+      `;
+      worksArr.push(popWindow);
+  });
+  return worksArr;
+}
+// for declare the function that pop the window on see project button
+function forModal() {
+  // here we make selector all to return an array value so we can iterate through it
+  const showProject = document.querySelectorAll('.showPro');
+  // define a variable to have the window details
+  const popWindow = windowPopUp();
+  // loop throgh the projects buttons
+  for (let i = 0; i < showProject.length; i += 1) {
+      // add the event to each see project button
+      showProject[i].addEventListener('click', () => {
+          // remove the default classes
+          popWindow[i].classList.remove('hidden');
+          overlay.classList.remove('hidden');
+          // append the detail window to the work section
+          mainWorkSection.appendChild(popWindow[i]);
+          const close = document.querySelectorAll('.closeBtn');
+          close.forEach((btn) => {
+              btn.addEventListener('click', () => {
+                  btn.parentElement.parentElement.parentElement.classList.add('hidden');
+                  overlay.classList.add('hidden');
+              });
+          });
+      });
+  }
+}
+worksCard();
+forModal();
