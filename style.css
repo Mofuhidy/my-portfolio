@@ -6,6 +6,10 @@
   --highlight: #ff6b00;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -490,20 +494,20 @@ body {
   .contactForm {
     margin-top: 3rem;
     display: flex;
-    padding: 0 10px;
+    padding: 0;
     flex-direction: column;
     row-gap: 45px;
   }
 
   .contactForm input {
-    width: 350px;
+    width: 345px;
     padding: 15px;
     border: none;
     border-bottom: 1px solid #dbd8d7;
   }
 
   .contactForm textarea {
-    width: 350px;
+    width: 345px;
     padding: 15px;
     border: none;
     background-color: #fbf8f7;
@@ -550,6 +554,61 @@ body {
     justify-content: center;
     column-gap: 20px;
     align-items: center;
+  }
+
+  /* design the mobile menu */
+  .navInfoMobile,
+  .cancelIcon {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .dNone {
+    display: none;
+  }
+
+  .navInfoMobile {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background-color: #3c3a39;
+    padding-top: 30px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  body.active {
+    overflow-y: hidden;
+  }
+
+  .cancelIcon {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+  }
+
+  .cancelIcon.active,
+  .navInfoMobile.active {
+    display: flex;
+  }
+
+  .navInfoMobile li a {
+    color: #fff5e1;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-decoration: none;
+  }
+
+  .mobileLinks {
+    width: 75%;
+    border-bottom: 1px solid #6f6c6b;
+    padding: 0 22px;
+    margin-left: 24px;
   }
 }
 
@@ -899,5 +958,10 @@ body {
   .btn {
     background-color: #f55800;
     transition: ease-in-out 0.3s 0.2s all;
+  }
+
+  .navInfoMobile,
+  .cancelIcon {
+    display: none;
   }
 }
