@@ -1,12 +1,12 @@
 // main work section
 const overlay = document.querySelector('.overlay');
 const mainWork = {
-  name: 'Multi-Post Stories',
-  image: './imgs/works/myWork.png',
-  live: '#',
-  repository: 'https://github.com/Mofuhidy',
-  technology: ['Bootstrap', 'Ruby', 'HTML', 'CSS'],
-  description: `A daily selection of privately personalized reads; no accounts or
+    title: 'Multi-Post Stories',
+    image: './imgs/works/myWork.png',
+    live: '#',
+    repository: 'https://github.com/Mofuhidy',
+    technology: ['Bootstrap', 'Ruby', 'HTML', 'CSS'],
+    description: `A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard dummy text
            ever since the 1500s, when an unknown printer took a standard dummy text.`,
 };
@@ -14,14 +14,14 @@ const mainWork = {
 const mainWorkSection = document.querySelector('#mainWork');
 
 function mainWorkCard() {
-  const mainCard = document.createElement('article');
-  mainCard.classList.add('card');
-  mainCard.innerHTML = `<div class="cardImg">
+    const mainCard = document.createElement('article');
+    mainCard.classList.add('card');
+    mainCard.innerHTML = `<div class="cardImg">
           <img src="${mainWork.image}" alt="img card of my work" />
         </div>
         <div class="cardContainer">
           <div class="card-content">
-            <h2 class="primaryCardText">${mainWork.name}</h2>
+            <h2 class="primaryCardText">${mainWork.title}</h2>
             <p class="seconndryCardText">
              ${mainWork.description}
             </p>
@@ -34,19 +34,19 @@ function mainWorkCard() {
           </div>
         </div>`;
 
-  mainWorkSection.appendChild(mainCard);
+    mainWorkSection.appendChild(mainCard);
 }
 
 // this function to add the details of the proejets inside the modal
 function mainPopUp() {
-  // define empty array to add the details to it
-  const mainWorkAr = [];
-  const mainPopWidow = document.createElement('section');
-  mainPopWidow.classList.add('modal', 'hidden'); // add the default classes
-  mainPopWidow.innerHTML = `
+    // define empty array to add the details to it
+    const mainWorkAr = [];
+    const mainPopWidow = document.createElement('section');
+    mainPopWidow.classList.add('modal', 'hidden'); // add the default classes
+    mainPopWidow.innerHTML = `
     <div class="modalHeader">
       <div class="title">
-        <h3 class="modalTitle">Multi Post Stories</h3>
+        <h3 class="modalTitle">${mainWork.title}</h3>
         <button class="closeBtn"><i class="fas fa-times"></i></button>
       </div>
 
@@ -70,40 +70,40 @@ function mainPopUp() {
     </div>
     `;
 
-  mainWorkAr.push(mainPopWidow);
+    mainWorkAr.push(mainPopWidow);
 
-  return mainWorkAr;
+    return mainWorkAr;
 }
 
 // for declare the function that pop the window on see project button
 function forMainModal() {
-  // here we make selector all to return an array value so we can iterate through it
-  const showPro = document.querySelectorAll('.mainBtn');
+    // here we make selector all to return an array value so we can iterate through it
+    const showPro = document.querySelectorAll('.mainBtn');
 
-  // define a variable to have the window details
-  const popWindow = mainPopUp();
+    // define a variable to have the window details
+    const popWindow = mainPopUp();
 
-  // loop throgh the projects buttons
-  for (let index = 0; index < showPro.length; index += 1) {
-    // add the event to each see project button
-    showPro[index].addEventListener('click', () => {
-      // remove the default classes
-      popWindow[index].classList.remove('hidden');
-      overlay.classList.remove('hidden');
+    // loop throgh the projects buttons
+    for (let index = 0; index < showPro.length; index += 1) {
+        // add the event to each see project button
+        showPro[index].addEventListener('click', () => {
+            // remove the default classes
+            popWindow[index].classList.remove('hidden');
+            overlay.classList.remove('hidden');
 
-      // append the detail window to the work section
-      mainWorkSection.appendChild(popWindow[index]);
+            // append the detail window to the work section
+            mainWorkSection.appendChild(popWindow[index]);
 
-      const close = document.querySelectorAll('.closeBtn');
+            const close = document.querySelectorAll('.closeBtn');
 
-      close.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          btn.parentElement.parentElement.parentElement.classList.add('hidden');
-          overlay.classList.add('hidden');
+            close.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    btn.parentElement.parentElement.parentElement.classList.add('hidden');
+                    overlay.classList.add('hidden');
+                });
+            });
         });
-      });
-    });
-  }
+    }
 }
 
 mainWorkCard();

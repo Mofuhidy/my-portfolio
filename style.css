@@ -1075,7 +1075,6 @@ body {
 
   /* Modal */
   .modal {
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -1203,5 +1202,18 @@ body {
 
   .worksSection {
     position: relative;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .modal::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .modal {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }
