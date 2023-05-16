@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -76,158 +79,10 @@
     <h2 class="worksTitle">My Recent Works</h2>
     <!-- this is the first main card of my work -->
     <div id="mainWork">
-      <article class="card">
-        <div class="cardImg">
-          <img src="./imgs/works/myWork.png" alt="img card of my work" />
-        </div>
-        <div class="cardContainer">
-          <div class="card-content">
-            <h2 class="primaryCardText">Multi-Post Stories</h2>
-            <p class="seconndryCardText">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-          </div>
-          <ul class="mainListCategoris">
-            <li class="mainTags">CSS</li>
-            <li class="mainTags">HTML</li>
-            <li class="mainTags">Ruby</li>
-            <li class="mainTags">Bootstrap</li>
-          </ul>
-          <div class="actionBtn">
-            <button type="button" class="btn mainBtn">See project</button>
-          </div>
-        </div>
-      </article>
+
     </div>
     <!-- this is the cards of my works -->
-    <div class="cards">
-      <div class="works">
-        <article class="worksCard">
-          <div class="card-container">
-            <div class="cardContent">
-              <h2 class="CardText">Profesional Art Printing Data</h2>
-              <p class="paragraphCardText">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. Has been the industry's standard.
-              </p>
-            </div>
-            <ul class="mainListCategoris">
-              <li class="tags">HTML</li>
-              <li class="tags">Bootstrap</li>
-              <li class="tags">Ruby</li>
-            </ul>
-          </div>
-
-          <button type="button" class="btn cardBtn">See project</button>
-        </article>
-      </div>
-
-      <div class="works">
-        <article class="worksCard">
-          <div class="card-container">
-            <div class="cardContent">
-              <h2 class="CardText">Data Dashboard Healthcare</h2>
-              <p class="paragraphCardText">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. Has been the industry's standard.
-              </p>
-            </div>
-            <ul class="mainListCategoris">
-              <li class="tags">HTML</li>
-              <li class="tags">Bootstrap</li>
-              <li class="tags">Ruby</li>
-            </ul>
-          </div>
-
-          <button type="button" class="btn cardBtn">See project</button>
-        </article>
-      </div>
-
-      <div class="works">
-        <article class="worksCard">
-          <div class="card-container">
-            <div class="cardContent">
-              <h2 class="CardText">Website Portfolio</h2>
-              <p class="paragraphCardText">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. Has been the industry's standard.
-              </p>
-            </div>
-            <ul class="mainListCategoris">
-              <li class="tags">HTML</li>
-              <li class="tags">Bootstrap</li>
-              <li class="tags">Ruby</li>
-            </ul>
-          </div>
-
-          <button type="button" class="btn cardBtn">See project</button>
-        </article>
-      </div>
-
-      <div class="works">
-        <article class="worksCard">
-          <div class="card-container">
-            <div class="cardContent">
-              <h2 class="CardText">Profesional Art Printing Data</h2>
-              <p class="paragraphCardText">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. Has been the industry's standard.
-              </p>
-            </div>
-            <ul class="mainListCategoris">
-              <li class="tags">HTML</li>
-              <li class="tags">Bootstrap</li>
-              <li class="tags">Ruby</li>
-            </ul>
-          </div>
-
-          <button type="button" class="btn cardBtn">See project</button>
-        </article>
-      </div>
-
-      <div class="works">
-        <article class="worksCard">
-          <div class="card-container">
-            <div class="cardContent">
-              <h2 class="CardText">Data Dashboard Healthcare</h2>
-              <p class="paragraphCardText">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. Has been the industry's standard.
-              </p>
-            </div>
-            <ul class="mainListCategoris">
-              <li class="tags">HTML</li>
-              <li class="tags">Bootstrap</li>
-              <li class="tags">Ruby</li>
-            </ul>
-          </div>
-
-          <button type="button" class="btn cardBtn">See project</button>
-        </article>
-      </div>
-
-      <div class="works">
-        <article class="worksCard">
-          <div class="card-container">
-            <div class="cardContent">
-              <h2 class="CardText">Website Portfolio</h2>
-              <p class="paragraphCardText">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. Has been the industry's standard.
-              </p>
-            </div>
-            <ul class="mainListCategoris">
-              <li class="tags">HTML</li>
-              <li class="tags">Bootstrap</li>
-              <li class="tags">Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="btn cardBtn">See project</button>
-        </article>
-      </div>
+    <div class="cards" id="worksSection">
 
     </div>
   </section>
@@ -332,7 +187,13 @@
       </ul>
     </div>
   </footer>
+
+
+  <div class="overlay hidden"></div>
+
+
   <script src="js/script.js"></script>
+  <script src="js/dynamic.js"></script>
 </body>
 
 </html>
