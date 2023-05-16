@@ -329,11 +329,6 @@ body {
 
   .worksCard {
     height: 320px;
-    background:
-      linear-gradient(180.45deg,
-        rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%),
-      url(imgs/works/work2.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 72px 19px 9px 13px;
@@ -614,12 +609,12 @@ body {
   .modal {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     margin: 5% 5%;
     background-color: #ffffff;
+    padding: 1.3rem;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -657,6 +652,7 @@ body {
   }
 
   .imgContainer img {
+    max-height: 300px;
     width: 100%;
     object-fit: cover;
   }
@@ -942,7 +938,7 @@ body {
   }
 
   .worksCard:hover {
-    background: url(imgs/works/work2.png);
+    /* background: url(imgs/works/work2.png); */
     background-repeat: no-repeat;
     background-size: cover;
     transform: translateY(-25px);
@@ -1078,12 +1074,13 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    margin: 0 5%;
+    margin: 5% 5%;
     background-color: #ffffff;
     padding: 1.3rem;
-    min-height: 250px;
-    position: absolute;
-    top: 10%;
+    max-height: 570px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -1128,6 +1125,7 @@ body {
   }
 
   .imgContainer img {
+    max-height: 375px;
     width: 100%;
     object-fit: cover;
   }
@@ -1200,9 +1198,7 @@ body {
     display: none;
   }
 
-  .worksSection {
-    position: relative;
-  }
+
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   .modal::-webkit-scrollbar {
