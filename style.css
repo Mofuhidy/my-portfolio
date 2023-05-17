@@ -153,6 +153,11 @@ body {
   }
 }
 
+.error {
+  color: red;
+  padding-left: 25px;
+}
+
 @media only screen and (min-width: 375px) {
   /* first section */
 
@@ -714,6 +719,7 @@ body {
 /* Descktop version */
 
 @media only screen and (min-width: 768px) {
+
   /* header section */
   .navBar {
     justify-content: space-around;

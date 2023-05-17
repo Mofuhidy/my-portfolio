@@ -31,3 +31,18 @@ mobileLinks.forEach((link) => {
     body.classList.toggle('active');
   });
 });
+
+// validation form
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const errorMsg = document.querySelector('.error');
+const regex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
+
+function isValid(e) {
+  e.preventDefault();
+
+}
+
+form.addEventListener('submit', (e) => {
+  isValid(e);
+});
