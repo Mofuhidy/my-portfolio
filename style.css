@@ -153,12 +153,6 @@ body {
   }
 }
 
-.error {
-  color: red;
-  padding-left: 5px;
-  padding-bottom: 5px;
-}
-
 @media only screen and (min-width: 375px) {
   /* first section */
 
@@ -550,8 +544,6 @@ body {
   .buttonContainer {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
   }
 
   .social-media-footer {
@@ -1076,8 +1068,6 @@ body {
 
   .buttonContainer {
     align-self: baseline;
-    flex-direction: column;
-    align-items: baseline;
   }
 
   .social-media-footer {
