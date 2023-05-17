@@ -40,7 +40,12 @@ const regex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
 
 function isValid(e) {
   e.preventDefault();
-
+if (regex.test(email.value)){
+  form.submit()
+  form.reset()
+}else {
+  errorMsg.innerText='The email should be in lower case'
+}
 }
 
 form.addEventListener('submit', (e) => {
