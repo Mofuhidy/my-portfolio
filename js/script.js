@@ -40,6 +40,18 @@ const areaMsg = document.getElementById('text-area-msg');
 const errorMsg = document.querySelector('.error');
 const regex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
 
+// local storage function
+function savedData() {
+  const formData = {
+    fullname: fullName.value,
+    email: email.value,
+    areaMsg: areaMsg.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+form.addEventListener('submit', savedData);
+
 function isValid(e) {
   e.preventDefault();
   // cheking email value if it is the same as the regex pattern
@@ -52,21 +64,9 @@ function isValid(e) {
   }
 }
 
-// local storage function
-function savedData() {
-  const formData = {
-    fullname: fullName.value,
-    email: email.value,
-    areaMsg: areaMsg.value,
-  };
-  localStorage.setItem('formData', JSON.stringify(formData));
-}
-
 form.addEventListener('submit', (e) => {
   isValid(e);
 });
-
-form.addEventListener('submit', savedData);
 
 // get the saved data from local storage
 window.addEventListener('load', () => {
