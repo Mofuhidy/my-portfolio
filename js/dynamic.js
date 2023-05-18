@@ -194,9 +194,7 @@ function worksCard() {
                  </ul>
                  </div>
                  <button type="button" class="btn cardBtn showPro">See project</button>
-                 </article>
-  `;
-
+                 </article> `;
     worksSection.appendChild(card);
   });
 }
