@@ -35,8 +35,8 @@ mobileLinks.forEach((link) => {
 // validation form and local storage
 const form = document.getElementById('contact-form');
 const email = document.getElementById('email');
-const fullName = document.getElementById('full-name')
-const areaMsg = document.getElementById('text-area-msg')
+const fullName = document.getElementById('full-name');
+const areaMsg = document.getElementById('text-area-msg');
 const errorMsg = document.querySelector('.error');
 const regex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
 
@@ -67,11 +67,13 @@ form.addEventListener('submit', (e) => {
 });
 
 form.addEventListener('submit', savedData);
-window.addEventListener('load',()=> {
-  const data=JSON.parse(localStorage.getItem('formData'));
-  if(data){
+
+// get the saved data from local storage
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  if (data) {
     fullName.value = data.fullname;
-    email.value =data.email;
-    areaMsg.value= data.areaMsg;
+    email.value = data.email;
+    areaMsg.value = data.areaMsg;
   }
-})
+});
