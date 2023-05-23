@@ -211,21 +211,13 @@ body {
     margin: 0;
     color: black;
     -webkit-text-stroke: 1px var(--second-color);
-    background:
-      linear-gradient(
-        to right,
-        #f55800,
-        rgba(241, 89, 3, 0.84) 50%,
-        transparent 10%
-      );
+    background: linear-gradient(to right, #f55800, rgba(241, 89, 3, 0.84) 50%, transparent 10%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation:
-      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
-      forwards 1s;
+    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse forwards 1s;
   }
 
   .mainParagraph .supportingText {
@@ -412,21 +404,13 @@ body {
     margin: 0;
     color: black;
     -webkit-text-stroke: 1px var(--second-color);
-    background:
-      linear-gradient(
-        to right,
-        #f55800,
-        rgba(241, 89, 3, 0.84) 50%,
-        transparent 10%
-      );
+    background: linear-gradient(to right, #f55800, rgba(241, 89, 3, 0.84) 50%, transparent 10%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation:
-      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
-      forwards 1s;
+    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse forwards 1s;
   }
 
   .aboutMeDescription {
@@ -623,7 +607,7 @@ body {
 
   .navInfoMobile li a {
     color: #fff5e1;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -667,7 +651,7 @@ body {
   }
 
   .modalHeader h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -687,7 +671,7 @@ body {
   }
 
   .modalContent .middle p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -701,7 +685,7 @@ body {
   }
 
   .modalContent .footer button {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -861,21 +845,13 @@ body {
 
     /* making stroke for texts */
     -webkit-text-stroke: 1px var(--second-color);
-    background:
-      linear-gradient(
-        to right,
-        #f55800,
-        rgba(241, 89, 3, 0.84) 50%,
-        transparent 10%
-      );
+    background: linear-gradient(to right, #f55800, rgba(241, 89, 3, 0.84) 50%, transparent 10%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation:
-      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
-      forwards 1s;
+    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse forwards 1s;
   }
 
   .mainParagraph .supportingText {
@@ -941,13 +917,6 @@ body {
     margin-top: 24px;
     font-size: 20px;
     line-height: 28px;
-
-    /* adding this to show after 10 line... */
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   /* works section */
@@ -1024,7 +993,7 @@ body {
   }
 
   .modalContent .footer button {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -1049,21 +1018,13 @@ body {
     font-size: 72px;
     line-height: 82px;
     -webkit-text-stroke: 1px var(--second-color);
-    background:
-      linear-gradient(
-        to right,
-        #f55800,
-        rgba(241, 89, 3, 0.84) 50%,
-        transparent 10%
-      );
+    background: linear-gradient(to right, #f55800, rgba(241, 89, 3, 0.84) 50%, transparent 10%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation:
-      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
-      forwards 1s;
+    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse forwards 1s;
   }
 
   #aboutMe .aboutMeDescription {
@@ -1184,7 +1145,7 @@ body {
   }
 
   .modalHeader h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1208,7 +1169,7 @@ body {
   }
 
   .modalContent .middle p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
