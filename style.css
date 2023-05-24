@@ -211,18 +211,20 @@ body {
     margin: 0;
     color: black;
     -webkit-text-stroke: 1px var(--second-color);
-    background: linear-gradient(
-      to right,
-      #f55800,
-      rgba(241, 89, 3, 0.84) 50%,
-      transparent 10%
-    );
+    background:
+      linear-gradient(
+        to right,
+        #f55800,
+        rgba(241, 89, 3, 0.84) 50%,
+        transparent 10%
+      );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
+    animation:
+      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
       forwards 1s;
   }
 
@@ -415,18 +417,20 @@ body {
     margin: 0;
     color: black;
     -webkit-text-stroke: 1px var(--second-color);
-    background: linear-gradient(
-      to right,
-      #f55800,
-      rgba(241, 89, 3, 0.84) 50%,
-      transparent 10%
-    );
+    background:
+      linear-gradient(
+        to right,
+        #f55800,
+        rgba(241, 89, 3, 0.84) 50%,
+        transparent 10%
+      );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
+    animation:
+      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
       forwards 1s;
   }
 
@@ -862,18 +866,20 @@ body {
 
     /* making stroke for texts */
     -webkit-text-stroke: 1px var(--second-color);
-    background: linear-gradient(
-      to right,
-      #f55800,
-      rgba(241, 89, 3, 0.84) 50%,
-      transparent 10%
-    );
+    background:
+      linear-gradient(
+        to right,
+        #f55800,
+        rgba(241, 89, 3, 0.84) 50%,
+        transparent 10%
+      );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
+    animation:
+      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
       forwards 1s;
   }
 
@@ -1048,18 +1054,20 @@ body {
     font-size: 72px;
     line-height: 82px;
     -webkit-text-stroke: 1px var(--second-color);
-    background: linear-gradient(
-      to right,
-      #f55800,
-      rgba(241, 89, 3, 0.84) 50%,
-      transparent 10%
-    );
+    background:
+      linear-gradient(
+        to right,
+        #f55800,
+        rgba(241, 89, 3, 0.84) 50%,
+        transparent 10%
+      );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    animation: backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
+    animation:
+      backgroundColor 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
       forwards 1s;
   }
 
