@@ -50,7 +50,7 @@ function savedData() {
   localStorage.setItem('formData', JSON.stringify(formData));
 }
 
-form.addEventListener('submit', savedData);
+form.addEventListener('submit', savedData());
 
 function isValid(e) {
   e.preventDefault();
