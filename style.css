@@ -386,6 +386,12 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 
   .tags {
@@ -976,6 +982,12 @@ body {
   .paragraphCardText {
     font-size: 17px;
     line-height: 24px;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 
   .modalHeader button {
